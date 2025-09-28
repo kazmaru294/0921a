@@ -5,7 +5,14 @@ body {
 }
 
 a {
-  transition: opacity .3s;
+.header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  min-height: 73px;
+  box-sizing: border-box;
+}sition: opacity .3s;
   text-decoration: none;
   color: #1ca9e3;
 }
@@ -54,7 +61,6 @@ img {
 .title {
   font-size: 34px;
   font-weight: bold;
-  line-height: 1;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .05em;
@@ -83,13 +89,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 25px 40px;
+  min-height: 73px;
+  box-sizing: border-box;
 }
 
 .header-logo {
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.2;
   margin-right: 20px;
   letter-spacing: .05em;
 }
@@ -113,10 +120,11 @@ img {
   font-size: 13px;
   font-weight: bold;
   display: inline-block;
-  padding: 5px 0;
+  padding: 8px 0;
   transition: .3s;
   letter-spacing: .05em;
   color: #333;
+  line-height: 1.4;
 }
 .gnav-item a:after {
   position: absolute;
@@ -410,6 +418,7 @@ img {
   /* 見出し */
   .title {
     font-size: 26px;
+    line-height: 1.4;
     margin-bottom: 20px;
   }
 
@@ -420,34 +429,38 @@ img {
   }
 
   /* レイアウト */
-  .wrapper {
-    padding-top: 57px;
+  .container {
+    padding-top: 60px;
   }
 
   .section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
-  .container {
+  .inner {
     padding: 0 20px;
   }
 
   /* ヘッダー */
-  .header .container {
-    padding: 15px;
+  .header .inner {
+    padding: 15px 20px;
+    min-height: 60px;
   }
 
   .header-logo {
-    font-size: 15px;
-    margin-right: 15px;
+    font-size: 16px;
+    margin-right: auto;
+    line-height: 1.5;
   }
 
   .gnav-item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 
   .gnav-item a {
-    font-size: 10px;
+    font-size: 11px;
+    padding: 8px 0;
+    line-height: 1.5;
   }
 
   .gnav-item a:after {
@@ -478,21 +491,26 @@ img {
 
   /* Works */
   .works-name {
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 15px;
   }
 
   .works-info {
-    margin-top: 3px;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-top: 5px;
   }
 
   .works-list {
     justify-content: space-between;
+    margin-bottom: -20px;
   }
 
   .works-item {
     flex: 0 0 48%;
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   /* Skill */
@@ -503,20 +521,28 @@ img {
 
   .skill-item {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    align-items: center;
   }
 
   .skill-item:last-child {
     margin-bottom: 0;
   }
 
+  .skill-img {
+    width: 50px;
+    margin-right: 15px;
+  }
+
   .skill-name {
-    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 8px;
   }
 
   .skill-text {
     font-size: 13px;
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
   /* About */
@@ -524,14 +550,15 @@ img {
     display: block;
   }
   .profile-img {
-    width: 150px;
+    width: 120px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .profile-body p {
     font-size: 14px;
     line-height: 1.7;
+    text-align: left;
   }
 
   .profile-body p:not(:last-child) {
